@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="✍🏻 1. 重要性 各大公司每年都要接收成千上万份简历，但是考虑到招聘成本，简历要先经过系统和 HR 筛选，简历筛选决定了你是否有笔试和面试资格。HR 需要从这么多的简历中筛选出合适的简历，那么一份简历通常不会花特别多的时间进行筛选，所以就需要让 HR 在很短的筛选时间中认可你的简历。  简历通过筛选之后就被放入人才库中，等待发起笔试和面试。如果简历足够优秀，可以在提前批阶段免笔试直接获得">
@@ -153,6 +153,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">20</span></a>
+
+  </li>
+        <li class="menu-item menu-item-playlist">
+
+    <a href="/playlist/" rel="section"><i class="fa fa-fw fa-music"></i>歌单</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -533,11 +538,13 @@
 
     </div>
 
-<!-- 音乐播放器 参考https://blog.csdn.net/yjwan521/article/details/80899992 -->
+<!-- 网易音乐播放器 参考https://blog.csdn.net/yjwan521/article/details/80899992 -->
+<!-- 
 <div>
- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height="110" src="//music.163.com/outchain/player?type=0&id=2606794523&auto=1&height=66" >
+ <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height="110" src="" >
  </iframe>
 </div>
+-->
 
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -650,7 +657,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       notify     : false,
       appId      : 'p4wAcGXeYyOl1WkgIK2k35yt-gzGzoHsz',
       appKey     : 'MmMcE9bjUyCm4Fk3tCHqTVRg',
-      placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+      placeholder: "ヾﾉ≧∀≦)o来啊，吐槽一下吧!",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,

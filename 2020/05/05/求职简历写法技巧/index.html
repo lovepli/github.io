@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="求职系列文章： 程序员如何写一份更好的简历 如何准备技术面试 程序员国外求职指南 系统设计面试 101 程序员面试推荐书籍  目录 简历模版 简历模版   个人简介 简介 前端 移动端 后端   项目经验 通用 前端 后端   英文版本 简介 项目经验    简历模板列表不想简历在招聘平台中像这样显示混乱？（下图来自真实的简历）  建议选择使用我们测试过的简历模板 本地修改和生成简历，不用担心隐私">
@@ -154,6 +154,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">20</span></a>
+
+  </li>
+        <li class="menu-item menu-item-playlist">
+
+    <a href="/playlist/" rel="section"><i class="fa fa-fw fa-music"></i>歌单</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -734,11 +739,13 @@
 
     </div>
 
-<!-- 音乐播放器 参考https://blog.csdn.net/yjwan521/article/details/80899992 -->
+<!-- 网易音乐播放器 参考https://blog.csdn.net/yjwan521/article/details/80899992 -->
+<!-- 
 <div>
- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height="110" src="//music.163.com/outchain/player?type=0&id=2606794523&auto=1&height=66" >
+ <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height="110" src="" >
  </iframe>
 </div>
+-->
 
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -851,7 +858,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       notify     : false,
       appId      : 'p4wAcGXeYyOl1WkgIK2k35yt-gzGzoHsz',
       appKey     : 'MmMcE9bjUyCm4Fk3tCHqTVRg',
-      placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+      placeholder: "ヾﾉ≧∀≦)o来啊，吐槽一下吧!",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
